@@ -1,0 +1,34 @@
+.main-page {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.input-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.url-table{
+  height: 50rem; 
+  overflow-y: scroll;
+}
+
+.row-table:hover {
+  /* background-color: ; */
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+  border: 0.3rem solid black;
+}
+
+#copy-btn{
+  border: 0;
+}
+
+.link {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
