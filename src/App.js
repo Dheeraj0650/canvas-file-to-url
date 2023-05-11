@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Table from './Table.js'
 import Input from './Input.js'
 import Select from './Select.js'
