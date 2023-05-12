@@ -30,17 +30,14 @@ function App() {
   }
 
   function handleCourseId(event, value){
-    console.log(event.target.value);
     setCourseId(event.target.value.trim());
   }
 
   function handleFolderId(event, value){
-    console.log(event.target.value);
     setFolderId(event.target.value.trim());
   }
 
   function handleFolderName(event, value){
-    console.log(event.target.value);
     setFolderName(event.target.value.trim());
   }
 
@@ -94,7 +91,6 @@ function App() {
     })
     .then(response => {
       // handle success
-      console.log(response.data);
       dispatch({
         type: 'add',
         data: response.data
@@ -103,7 +99,6 @@ function App() {
     })
     .catch(error => {
       // handle error
-      console.log(error.message);
       setLoader(false);
       setAlertType("error");
       setAlert(error.message);
