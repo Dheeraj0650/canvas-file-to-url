@@ -26,22 +26,22 @@ function App() {
   function handleSelect(event, value){
     setAlertType("success");
     setAlert("Selected search type " + event.target.innerText);
-    setSelect(event.target.innerText);
+    setSelect(event.target.innerText.trim());
   }
 
   function handleCourseId(event, value){
     console.log(event.target.value);
-    setCourseId(event.target.value);
+    setCourseId(event.target.value.trim());
   }
 
   function handleFolderId(event, value){
     console.log(event.target.value);
-    setFolderId(event.target.value);
+    setFolderId(event.target.value.trim());
   }
 
   function handleFolderName(event, value){
     console.log(event.target.value);
-    setFolderName(event.target.value);
+    setFolderName(event.target.value.trim());
   }
 
   function isInteger(str) {
@@ -62,8 +62,8 @@ function App() {
         return;
       }
       data = {
-        courseId: courseId,
-        folderId: folderId,
+        courseId: courseId.trim(),
+        folderId: folderId.trim(),
         method: 'file'
       }
     }
@@ -79,8 +79,8 @@ function App() {
         return;
       }
       data = {
-        courseId: courseId,
-        folderName: folderName,
+        courseId: courseId.trim(),
+        folderName: folderName.trim(),
         method: 'folder'
       }
     }
